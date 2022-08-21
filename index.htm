@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto JS</title>
+        <link rel="shortcut icon" href="imagenes/block.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC:wght@700&family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC:wght@700&family=Raleway:ital,wght@1,100&family=Ubuntu&display=swap" rel="stylesheet">
+        
+    </head>
+    <body id="fondo">
+        <div class="contenedor">
+        <header class="cabecera">
+            <h2 class="titulo"> Encriptador de mensajes</h2>
+        </header>
+           <main>
+            <section>
+                <textarea id="uno" rows="14" cols="65" class="primerC" placeholder="Ingresa tu mensaje a encriptar."></textarea>
+            </section>
+            <section>
+                <textarea id="dos" rows="14" cols="65" class="segundoC" placeholder="Aún no se han encriptado mensajes."></textarea>
+            </section>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 18 17">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg> Solo letras minúsculas y sin acento.</p>
+                <button class="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="desencriptar"onclick="desencriptar()">Desencriptar</button>
+                <button class="copiar" onclick="copia();" id="copia">Copiar</button>            
+        </main> 
+            <script>
+            
+                function encriptar(){
+                const text = document.querySelector(".primerC").value;
+                const textoCifrado = text.replace(/e/gi,"enter").replace(/i/gi,"imes").replace(/a/gi,"ai").replace(/o/gi,"ober").replace(/u/gi,"ufat").toLowerCase();
+                document.querySelector(".segundoC").value = textoCifrado;
+                document.querySelector(".primerC").value= "";
+            }
+
+                function desencriptar(){
+                const text = document.querySelector(".segundoC").value;
+                const textoCifrado = text.replace(/enter/gi,"e").replace(/imes/gi,"i").replace(/ai/gi,"a").replace(/ober/gi,"o").replace(/ufat/gi,"u").toLowerCase();
+                document.querySelector(".primerC").value = textoCifrado;
+                document.querySelector(".segundoC").value= "";
+            }
+               
+                function copia() {
+                    let dos= document.getElementById('dos');
+                    dos.select();
+                    dos.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    document.getElementById('dos').value= "";
+                    
+            }
+
+            
+               </script>
+        </div>
+        <aside>
+            <div class="contacto">
+                <p>Contacto:</p>
+                <a href="https://github.com/RodriguezAndress" target="_blank" class="red1">
+                    <img src="imagenes/gitub.png" alt="Github">
+                </a>
+                <a href="https://www.linkedin.com/in/andr%C3%A9s-s-rodriguez-p-b13b83196/" target="_blank" class="red2">
+                    <img src="imagenes/linkInd.png" alt="LinekIn">
+
+                </a>
+            </div>
+        </aside>
+    </body>
+</html>

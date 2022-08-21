@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+main{
+    display:flex;
+}
+#fondo{
+    background:  linear-gradient( #1cb5e0, #000046);  
+    background-size:cover;
+}
+.contenedor{
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cabecera{
+    width: 100%;
+    height: 90px;
+    min-width: 300px;
+    text-align: center;
+    font-family: "Aboreto";
+    justify-content: center;
+    display: inline-flex;
+    
+}
+::placeholder{
+    color: rgb(207, 197, 197);
+}
+.primerC{
+    display: inline-block;
+    background: none;
+    width: 80%;
+    margin:20px 20px 0px 80px;
+    border-radius: 20px;
+    border: double;
+    border-color: black;
+    font-family: "Ubuntu";
+    text-indent: 8px;
+    font-size: 18px;
+    min-width: 300px;
+
+} 
+
+.segundoC{
+    display: inline-block;
+    background:none;
+    width: 80%;
+    margin:20px 15px 0px 80px;
+    border-radius: 20px;
+    border: double;
+    border-color: black;
+    font-family: "Ubuntu";
+    text-indent: 10px;
+    font-size: 18px;
+    min-width: 300px;
+}
+p{
+    display: inline-flex;
+    position: absolute;
+    margin: 342px 50px 20px 130px;
+    font-family: "Raleway";
+    font-weight: bold;
+
+}
+ .encriptar{
+    display: inline-block;
+    vertical-align: top;
+    margin: 370px 50px 20px 340px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    font-family: "Aboreto";
+    background-color: rgb(185, 22, 22);
+    border:outset;
+    border-color: rgb(167, 88, 88);
+    font-weight: bold;
+    color: rgb(185, 175, 175);
+    cursor: pointer;
+    position: absolute;
+
+}
+.desencriptar{
+    display: inline-block;
+    vertical-align: top;
+    margin:  370px 50px 20px 890px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    font-family: "Aboreto";
+    background-color: rgb(185, 22, 22);
+    border:outset;
+    border-color: brown;
+    font-weight: bold;
+    color: rgb(185, 175, 175);
+    cursor: pointer;
+    position: absolute;
+
+}
+.copiar{
+    display: inline-block;
+    vertical-align: top;
+    margin: 370px 50px 20px 1150px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    font-family: "Aboreto";
+    background-color: rgb(185, 22, 22);
+    border:outset;
+    border-color: brown;
+    font-weight: bold;
+    color: rgb(185, 175, 175);
+    cursor: pointer;
+    position: absolute;
+}
+aside{
+    width: 30%;
+    padding: 50px;
+    box-sizing: border-box;
+    float: left;
+    top: 400px;
+
+}
+.contacto p{
+    font-family: "Aboreto";
+    font-weight: bold;
+    margin: 10px 50px 20px 0px;
+}
+.red1{
+    height: 70px;
+    float: left;
+    margin: 40px 50px 20px 0px;
+
+}
+.red1 :hover{
+    transform: scale(1.1);
+    transition: 1s all;
+}
+.red1 img{
+    width: 81px;
+    height: 73px;
+}
+.red2{
+    height: 70px;
+    float: left;
+    margin: 40px 50px 20px 0px;
+}
+.red2 :hover{
+    transform: scale(1.1);
+    transition: 1s all;
+}
+.red2 img{
+    width: 70px;
+    height: 70px;
+}
