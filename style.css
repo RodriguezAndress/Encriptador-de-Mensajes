@@ -6,7 +6,7 @@ main{
     display:flex;
 }
 #fondo{
-    background: linear-gradient(90deg, rgba(82,75,185,1) 0%, rgba(180,76,134,1) 28%, rgba(17,175,235,1) 80%);/*linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,39,108,1) 37%, rgba(0,212,255,1) 100%); /*radial-gradient(circle at 50% 50%, #c541e4 0, #8f32c4 16.67%, #58219e 33.33%, #1a0d73 50%, #000048 66.67%, #000026 83.33%, #000004 100%);*/
+    background: linear-gradient(90deg, rgba(82,75,185,1) 0%, rgba(180,76,134,1) 28%, rgba(17,175,235,1) 80%);
     background-size:cover;
 }
 .contenedor{
@@ -25,8 +25,6 @@ main{
     font-family: "Aboreto";
     justify-content: center;
     display: inline-flex;
-
-    
 }
 ::placeholder{
     color: rgb(207, 197, 197);
@@ -200,7 +198,6 @@ aside{
         position: unset;
         display: grid;
         align-items: center;
-        /*justify-content: space-between;*/
         justify-items: center;
     }
     main, .copiar{
