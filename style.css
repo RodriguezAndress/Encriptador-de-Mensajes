@@ -6,7 +6,7 @@ main{
     display:flex;
 }
 #fondo{
-    background:  linear-gradient( #1cb5e0, #000046);  
+    background: linear-gradient(90deg, rgba(82,75,185,1) 0%, rgba(180,76,134,1) 28%, rgba(17,175,235,1) 80%);/*linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,39,108,1) 37%, rgba(0,212,255,1) 100%); /*radial-gradient(circle at 50% 50%, #c541e4 0, #8f32c4 16.67%, #58219e 33.33%, #1a0d73 50%, #000048 66.67%, #000026 83.33%, #000004 100%);*/
     background-size:cover;
 }
 .contenedor{
@@ -25,6 +25,7 @@ main{
     font-family: "Aboreto";
     justify-content: center;
     display: inline-flex;
+
     
 }
 ::placeholder{
@@ -64,6 +65,7 @@ p{
     margin: 342px 50px 20px 130px;
     font-family: "Raleway";
     font-weight: bold;
+    color:aliceblue;
 
 }
  .encriptar{
@@ -125,6 +127,7 @@ aside{
     font-family: "Aboreto";
     font-weight: bold;
     margin: 10px 50px 20px 0px;
+    color: whitesmoke;
 }
 .red1{
     height: 70px;
@@ -152,4 +155,127 @@ aside{
 .red2 img{
     width: 70px;
     height: 70px;
+}
+@media screen and (max-width: 960px){
+    #fondo{
+        height: 0;
+        width: 100%;
+    }
+    .contenedor{
+        padding: 0;
+        width: 100%;
+    }
+    .cabecera{
+        text-align: center;
+        position: absolute;
+        height: 0;
+    }
+    .titulo{
+        position:absolute;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+    }
+    main, .primerC, .segundoC{
+        margin-top: 4em;
+        margin-left: 0;
+        display: inline-block;
+        width: 100%;
+    }
+    p{
+        display: inline-block;
+        position: relative;
+        margin: 0;
+    }
+    main, .encriptar{
+        margin: 0 0 3em 0;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+    }
+    main,  .desencriptar{
+        margin: 0 0 0 0;
+        position: unset;
+        display: grid;
+        align-items: center;
+        /*justify-content: space-between;*/
+        justify-items: center;
+    }
+    main, .copiar{
+        margin: 1em 0 0 0;
+        position: relative;
+        display: grid;
+        justify-items: center;
+    }
+    aside{
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 540px) {
+    #fondo{
+        height: 0;
+        width: 100%;
+        background-image: url(imagenes/bg.png);
+        background-position:center;
+    }
+    .contenedor{
+        padding: 0;
+        width: 100%;
+    }
+    .cabecera{
+        text-align: center;
+        position: absolute;
+        height: 0;
+    }
+    .titulo{
+        position:absolute;
+        color: white;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+    }
+    main, .primerC, .segundoC{
+        margin-top: 4em;
+        margin-left: 0;
+        border-color: white;
+        display: block;
+        width: 100%;
+        color: antiquewhite;
+    }
+    p{
+        display: inline-block;
+        position: relative;
+        margin: 0;
+    }
+    main, .encriptar{
+        margin: 0 0 3em 0;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+    }
+    main,  .desencriptar{
+        margin: 0 0 0 0;
+        position: unset;
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: start;
+    }
+    main, .copiar{
+        margin: 1em 0 0 0;
+        position: relative;
+        display: grid;
+        justify-items: center;
+    }
+    aside{
+        padding: 0;
+    }
+    
 }
